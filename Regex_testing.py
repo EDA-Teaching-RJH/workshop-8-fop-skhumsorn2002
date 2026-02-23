@@ -2,7 +2,7 @@ import re
 email = input("What's your email? ").strip()
 
 
-if re.search(r"^\w+@\w+\.(ac.uk | gov.uk | nhs.net)$", email):
+if re.search(r"^\w+@+\w+\.(ac.uk|gov.uk|nhs.net)$", email):
     print("Valid")
 else:
     print("Invalid")
